@@ -9,10 +9,25 @@
     <!--律动View-->
     <org.libpag.PAGView
             android:id="@+id/pag_view_rhythm"
-            android:layout_width="132dp"
+            android:layout_width="80dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="13dp"
-            android:layout_height="132dp" />
+            android:layout_height="80dp" />
+
+    <org.libpag.PAGView
+            android:id="@+id/pag_view_rhythm2"
+            android:layout_toEndOf="@+id/pag_view_rhythm"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_height="16dp" />
+
+    <org.libpag.PAGView
+            android:id="@+id/pag_view_rhythm3"
+            android:layout_toEndOf="@+id/pag_view_rhythm2"
+            android:layout_width="104dp"
+            android:layout_marginStart="8dp"
+            android:layout_height="104dp"
+            android:layout_centerVertical="true" />
 
     <ImageView
             android:id="@+id/iv_play_pause"

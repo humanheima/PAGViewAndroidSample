@@ -30,7 +30,7 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.VH> {
 
     @Override
     public void onBindViewHolder(RvAdapter.VH vh, int position) {
-        vh.tvTitle.setText("position "+position);
+        vh.tvTitle.setText("pos "+position);
     }
 
     @Override

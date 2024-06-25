@@ -4,6 +4,23 @@
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/layout_item.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/layout_rv_item.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/view_gold_voice.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="CustomView" />
@@ -24,10 +41,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c776f2a9-fd1f-4f3e-a6b6-2a9125ad8e72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/问题1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/问题1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/问题2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/问题2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/pag/sound_microphone.pag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/pag/sound_wave2.pag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.9/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.9/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.9/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9/fileHashes/fileHashes.bin" afterDir="false" />
@@ -36,20 +51,44 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.9/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.9/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PAGView在RecyclerView中复用Item导致PAGView无法播放的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/PAGView在RecyclerView中复用Item导致PAGView无法播放的问题.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tencent/libpag/sample/RvAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tencent/libpag/sample/RvAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tencent/libpag/sample/libpag_sample/CustomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tencent/libpag/sample/libpag_sample/CustomView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_gold_voice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_gold_voice.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@9dqgsswcljib797d]" />
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[9dqgsswcljib797d]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,6 +101,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2LMN0hwFnVIPEd0aODJ3OvGbrHp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -69,35 +111,37 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="xiaomi-21091116c-9dqgsswcljib797d" />
-    <property name="DEBUGGABLE_PROCESS" value="com.tencent.libpag.sample.libpag_sample" />
-    <property name="DEBUGGER_ID" value="Auto" />
-    <property name="ResourceManagerPrefKey.ResourceType" value="LAYOUT" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="android-custom-view/Users/dumingwei/Library/Android/sdk/sources/android-28/android/view/TextureView.java_SELECTED" value="TextureView" />
-    <property name="android-custom-view/Users/dumingwei/OLD_AS_Project/pag-android/sample/app/src/main/java/com/tencent/libpag/sample/libpag_sample/CustomView.java_SELECTED" value="CustomView" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "android-custom-view/Users/dumingwei/.gradle/caches/modules-2/files-2.1/com.tencent.tav/libpag/4.0.5.10/4e47a1fb5fa17a7973ba8b11eb171bde77b1873d/libpag-4.0.5.10-sources.jar!/org/libpag/PAGView.java_SELECTED": "PAGView",
+    "android-custom-view/Users/dumingwei/OLD_AS_Project/PAGViewAndroidSample/app/src/main/java/com/tencent/libpag/sample/libpag_sample/CustomView.java_SELECTED": "CustomView",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/dumingwei/OLD_AS_Project/PAGViewAndroidSample/app/src/main/assets/pag",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets/pag" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/assets" />
     </key>
-    <key name="android.template.1634613088">
-      <recent name="com.tencent.libpag.sample" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/assets/pag" />
     </key>
+    <key name="android.template.1634613088">
+      <recent name="com.tencent.libpag.sample" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="PAGViewAndroidSample.app" />
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="PAGViewAndroidSample.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -105,13 +149,13 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -122,6 +166,8 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Auto>
       <Hybrid>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -129,20 +175,27 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Hybrid>
-      <Java />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
       <Native>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
         <option name="SHOW_STATIC_VARS" value="true" />
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
         <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
@@ -176,95 +229,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="486" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1675733443269">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="486" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675733443269" />
-    <state x="439" y="181" width="561" height="537" key="AndroidProcessChooserDialog" timestamp="1675823509723">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="439" y="181" key="AndroidProcessChooserDialog/0.0.1440.900/-510.-1415.2560.1415@0.0.1440.900" timestamp="1675768667392" />
-    <state x="439" y="181" width="561" height="537" key="AndroidProcessChooserDialog/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675823509723" />
-    <state x="270" y="-1151" key="AndroidProcessChooserDialog/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675769058997" />
-    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1675736698236">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900/-510.-1415.2560.1415@0.0.1440.900" timestamp="1675736698236" />
-    <state width="1388" height="513" key="GridCell.Tab.0.bottom" timestamp="1675823707839">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1388" height="507" key="GridCell.Tab.0.bottom/0.0.1440.900/-510.-1415.2560.1415@0.0.1440.900" timestamp="1675736067233" />
-    <state width="1388" height="513" key="GridCell.Tab.0.bottom/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675823707839" />
-    <state width="1388" height="232" key="GridCell.Tab.0.bottom/0.25.1440.875/-510.-1415.2560.1362@0.25.1440.875" timestamp="1675677144464" />
-    <state width="2508" height="410" key="GridCell.Tab.0.bottom/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675770886676" />
-    <state width="1388" height="513" key="GridCell.Tab.0.center" timestamp="1675823707839">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1388" height="507" key="GridCell.Tab.0.center/0.0.1440.900/-510.-1415.2560.1415@0.0.1440.900" timestamp="1675736067232" />
-    <state width="1388" height="513" key="GridCell.Tab.0.center/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675823707839" />
-    <state width="1388" height="232" key="GridCell.Tab.0.center/0.25.1440.875/-510.-1415.2560.1362@0.25.1440.875" timestamp="1675677144458" />
-    <state width="2508" height="410" key="GridCell.Tab.0.center/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675770886675" />
-    <state width="1388" height="513" key="GridCell.Tab.0.left" timestamp="1675823707838">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1388" height="507" key="GridCell.Tab.0.left/0.0.1440.900/-510.-1415.2560.1415@0.0.1440.900" timestamp="1675736067232" />
-    <state width="1388" height="513" key="GridCell.Tab.0.left/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675823707838" />
-    <state width="1388" height="232" key="GridCell.Tab.0.left/0.25.1440.875/-510.-1415.2560.1362@0.25.1440.875" timestamp="1675677144443" />
-    <state width="2508" height="410" key="GridCell.Tab.0.left/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675770886674" />
-    <state width="1388" height="513" key="GridCell.Tab.0.right" timestamp="1675823707839">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1388" height="507" key="GridCell.Tab.0.right/0.0.1440.900/-510.-1415.2560.1415@0.0.1440.900" timestamp="1675736067233" />
-    <state width="1388" height="513" key="GridCell.Tab.0.right/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675823707839" />
-    <state width="1388" height="232" key="GridCell.Tab.0.right/0.25.1440.875/-510.-1415.2560.1362@0.25.1440.875" timestamp="1675677144460" />
-    <state width="2508" height="410" key="GridCell.Tab.0.right/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675770886676" />
-    <state width="1388" height="513" key="GridCell.Tab.1.bottom" timestamp="1675823707840">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1388" height="513" key="GridCell.Tab.1.bottom/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675823707840" />
-    <state width="2508" height="410" key="GridCell.Tab.1.bottom/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675770886678" />
-    <state width="1388" height="513" key="GridCell.Tab.1.center" timestamp="1675823707840">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1388" height="513" key="GridCell.Tab.1.center/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675823707840" />
-    <state width="2508" height="410" key="GridCell.Tab.1.center/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675770886677" />
-    <state width="1388" height="513" key="GridCell.Tab.1.left" timestamp="1675823707839">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1388" height="513" key="GridCell.Tab.1.left/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675823707839" />
-    <state width="2508" height="410" key="GridCell.Tab.1.left/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675770886677" />
-    <state width="1388" height="513" key="GridCell.Tab.1.right" timestamp="1675823707840">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1388" height="513" key="GridCell.Tab.1.right/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675823707840" />
-    <state width="2508" height="410" key="GridCell.Tab.1.right/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675770886677" />
-    <state x="0" y="0" width="1231" height="900" key="SettingsEditor" timestamp="1675764368786">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="0" y="0" width="1231" height="900" key="SettingsEditor/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675764368786" />
-    <state width="1336" height="1010" key="SwitcherDM" timestamp="1675769197581">
-      <screen x="-510" y="-1440" width="2560" height="1440" />
-    </state>
-    <state width="751" height="631" key="SwitcherDM/0.0.1440.900/-510.-1415.2560.1415@0.0.1440.900" timestamp="1675768084618" />
-    <state width="1336" height="1010" key="SwitcherDM/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675769197581" />
-    <state x="-510" y="-1440" width="2560" height="1440" key="dock-window-1" timestamp="1675822954224">
-      <screen x="-510" y="-1415" width="2560" height="1415" />
-    </state>
-    <state x="-510" y="-1440" width="2560" height="1440" key="dock-window-1/0.0.1440.847/-510.-1415.2560.1415@0.0.1440.847" timestamp="1675822954224" />
-    <state x="301" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1675822430307">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="301" y="0" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900/-510.-1415.2560.1415@0.0.1440.900" timestamp="1675822430307" />
-    <state x="301" y="0" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900/-510.-1440.2560.1440@0.0.1440.900" timestamp="1675735905347" />
-    <state x="25" y="-1440" width="1490" height="1652" key="search.everywhere.popup/0.25.1440.875/-510.-1440.2560.1440@-510.-1440.2560.1440" timestamp="1675770477107" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -283,11 +252,6 @@
           <url>jar://$USER_HOME$/.gradle/caches/transforms-3/64010f259d65f7af089f7067f6e220d5/transformed/jars/classes.jar!/org/libpag/PAGView.class</url>
           <line>670</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/transforms-3/64010f259d65f7af089f7067f6e220d5/transformed/jars/classes.jar!/org/libpag/PAGView.class</url>
-          <line>430</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

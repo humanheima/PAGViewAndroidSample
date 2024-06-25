@@ -1,17 +1,14 @@
 package com.tencent.libpag.sample.libpag_sample;
 
 import android.content.Context;
-import android.graphics.Matrix;
 import android.util.AttributeSet;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import org.libpag.PAGComposition;
-import org.libpag.PAGFile;
 import org.libpag.PAGView;
+import org.libpag.PAGView.PAGViewListener;
 
 /**
  * Created by p_dmweidu on 2023/2/7
@@ -20,12 +17,16 @@ import org.libpag.PAGView;
 public class CustomView extends RelativeLayout {
 
     private static final String BLACK_PAG_FILE_NAME = "assets://pag/sound_wave_black.pag";
+    private static final String BLACK_PAG_FILE_NAME2 = "assets://pag/sound_wave2.pag";
+    private static final String BLACK_PAG_FILE_NAME3 = "assets://pag/sound_microphone.pag";
     //private static final String BLACK_PAG_FILE_NAME = "assets://10.pag";
 
     private static final String TAG = "CustomView";
 
 
     private PAGView pagView;
+    private PAGView pagView2;
+    private PAGView pagView3;
 
     private PAGComposition pagComposition;
 
@@ -49,10 +50,45 @@ public class CustomView extends RelativeLayout {
         View.inflate(context, R.layout.view_gold_voice, this);
         pagView = findViewById(R.id.pag_view_rhythm);
         pagView.setRepeatCount(-1);
-        pagView.setComposition(pagComposition);
+
+        pagView2 = findViewById(R.id.pag_view_rhythm2);
+        pagView2.setRepeatCount(-1);
+
+        pagView3 = findViewById(R.id.pag_view_rhythm3);
+        pagView3.setRepeatCount(-1);
+
+        //pagView.setComposition(pagComposition);
         pagView.setPath(BLACK_PAG_FILE_NAME);
+        pagView2.setPath(BLACK_PAG_FILE_NAME2);
+        pagView3.setPath(BLACK_PAG_FILE_NAME3);
 
         iv_play_pause = findViewById(R.id.iv_play_pause);
+
+        pagView3.addListener(new PAGViewListener() {
+
+            @Override
+            public void onAnimationStart(PAGView view) {
+                Log.d(TAG, "onAnimationStart: ");
+
+            }
+
+            @Override
+            public void onAnimationEnd(PAGView view) {
+                Log.d(TAG, "onAnimationEnd: ");
+
+            }
+
+            @Override
+            public void onAnimationCancel(PAGView view) {
+                Log.d(TAG, "onAnimationCancel: ");
+
+            }
+
+            @Override
+            public void onAnimationRepeat(PAGView view) {
+
+            }
+        });
 
         iv_play_pause.setOnClickListener(new OnClickListener() {
             @Override
@@ -64,6 +100,19 @@ public class CustomView extends RelativeLayout {
                 } else {
                     pagView.stop();
                 }
+
+                if (pagView2.isPlaying()) {
+                    pagView2.stop();
+                } else {
+                    pagView2.play();
+                }
+
+                if (pagView3.isPlaying()) {
+                    pagView3.stop();
+                } else {
+                    pagView3.play();
+                }
+
             }
         });
     }
@@ -71,17 +120,18 @@ public class CustomView extends RelativeLayout {
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        Log.i(TAG,
-                "onAttachedToWindow: " + this.hashCode() + "pagView = " + pagView.hashCode() + " isPlaying = " + pagView
-                        .isPlaying());
+//        Log.i(TAG,
+//                "onAttachedToWindow: " + this.hashCode() + "pagView = " + pagView.hashCode() + " isPlaying = " + pagView
+//                        .isPlaying());
     }
 
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        Log.i(TAG,
-                "onDetachedFromWindow: " + this.hashCode() + "pagView = " + pagView.hashCode() + " isPlaying = " + pagView
-                        .isPlaying());
+//        Log.i(TAG,
+//                "onDetachedFromWindow: " + this.hashCode() + "pagView = " + pagView.hashCode() + " isPlaying = "
+//                        + pagView
+//                        .isPlaying());
     }
 
 
