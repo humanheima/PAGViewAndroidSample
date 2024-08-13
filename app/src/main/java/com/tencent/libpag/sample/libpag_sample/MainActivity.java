@@ -1,32 +1,14 @@
 package com.tencent.libpag.sample.libpag_sample;
 
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.opengl.EGL14;
-import android.opengl.EGLConfig;
-import android.opengl.EGLContext;
-import android.opengl.EGLDisplay;
-import android.opengl.EGLSurface;
-import android.opengl.GLES20;
-import android.opengl.GLUtils;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.RelativeLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.tencent.libpag.sample.RecyclerViewActivity;
-import org.libpag.PAGFile;
-import org.libpag.PAGImage;
-import org.libpag.PAGText;
-import org.libpag.PAGView;
-
-import java.io.IOException;
-import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity implements SimpleListAdapter.ItemClickListener {
 
