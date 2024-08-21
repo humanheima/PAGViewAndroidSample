@@ -8,8 +8,8 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import org.libpag.PAGComposition
 import org.libpag.PAGFile
+import org.libpag.PAGLayer
 import org.libpag.PAGSolidLayer
-import org.libpag.PAGTextLayer
 import org.libpag.PAGView
 import org.libpag.PAGView.PAGViewListener
 
@@ -110,18 +110,29 @@ class CustomView @JvmOverloads constructor(
         })
     }
 
+    /**
+     * 比如修改图层类型为 LayerTypeSolid 的图层的颜色
+     */
     fun updatePagColor(color: Int) {
-        val editableIndices = pagFile?.getEditableIndices(PAGTextLayer.LayerTypeSolid) ?: return
-        for (editableIndex in editableIndices) {
-            val pagLayers =
-                pagFile?.getLayersByEditableIndex(editableIndex, PAGTextLayer.LayerTypeSolid)
-                    ?: break
-            for (pagLayer in pagLayers) {
-                if (pagLayer is PAGSolidLayer) {
-                    pagLayer.setSolidColor(color)
-                }
+        val layers: Array<PAGLayer>? = pagFile?.getLayersByName("深 绿色 纯色 1")
+        Log.d(TAG, "updatePagColor: layers = ${layers?.size}")
+        layers?.forEach {
+            if (it is PAGSolidLayer) {
+                it.setSolidColor(color)
             }
         }
+
+//        val editableIndices = pagFile?.getEditableIndices(PAGTextLayer.LayerTypeSolid) ?: return
+//        for (editableIndex in editableIndices) {
+//            val pagLayers =
+//                pagFile?.getLayersByEditableIndex(editableIndex, PAGTextLayer.LayerTypeSolid)
+//                    ?: break
+//            for (pagLayer in pagLayers) {
+//                if (pagLayer is PAGSolidLayer) {
+//                    pagLayer.setSolidColor(color)
+//                }
+//            }
+//        }
     }
 
     override fun onAttachedToWindow() {
