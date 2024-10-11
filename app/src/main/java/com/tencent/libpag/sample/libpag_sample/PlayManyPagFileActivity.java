@@ -24,7 +24,19 @@ public class PlayManyPagFileActivity extends AppCompatActivity {
 
     private PAGView pagView;
 
+    /**
+     * 在线的PAG文件地址
+     */
     private List<String> pagPathList = new ArrayList<>();
+    /**
+     * 在线的PAG文件
+     */
+    private List<PAGFile> pagFileList = new ArrayList<>();
+
+    /**
+     * 本地的PAG文件
+     */
+    private List<PAGFile> localPagFileList = new ArrayList<>();
 
     public static void launch(Context context) {
         Intent starter = new Intent(context, PlayManyPagFileActivity.class);
@@ -33,7 +45,6 @@ public class PlayManyPagFileActivity extends AppCompatActivity {
 
     private int currentIndex = 0;
 
-    private List<PAGFile> pagFileList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +69,7 @@ public class PlayManyPagFileActivity extends AppCompatActivity {
     }
 
     private void loadPagFile(String path) {
-        pagView.setPathAsync(path, new PAGFile.LoadListener() {
+        PAGFile.LoadAsync(path, new PAGFile.LoadListener() {
             @Override
             public void onLoad(PAGFile pagFile) {
                 if (pagFile != null) {
