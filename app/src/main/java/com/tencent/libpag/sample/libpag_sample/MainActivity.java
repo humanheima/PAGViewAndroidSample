@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements SimpleListAdapter
             "Create PAGSurface through texture ID",
             "Render an interval of the pag file",
             "测试在RecyclerView中使用低于4.0.5.17版本，在View复用的时候，导致PAGView无法播放",
+            "测试顺序播放多个PAGFile",
     };
 
     @Override
@@ -53,6 +54,9 @@ public class MainActivity extends AppCompatActivity implements SimpleListAdapter
                 break;
             case 6:
                 RecyclerViewActivity.launch(this);
+                break;
+            case 7:
+                PlayManyPagFileActivity.launch(this);
                 break;
             default:
                 break;

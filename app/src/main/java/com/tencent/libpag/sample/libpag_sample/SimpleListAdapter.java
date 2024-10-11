@@ -37,6 +37,11 @@ public class SimpleListAdapter extends RecyclerView.Adapter<SimpleListAdapter.It
     }
 
     @Override
+    public void onViewRecycled(@NonNull ItemHolder holder) {
+        super.onViewRecycled(holder);
+    }
+
+    @Override
     public int getItemCount() {
         return items.length;
     }
