@@ -14,7 +14,23 @@
         <org.libpag.PAGView
             android:id="@+id/pag_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_play_many_urls" />
+
+        <Button
+            android:id="@+id/btn_play_many_urls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="播放多个 PAG 在线 URL" />
+
+        <Button
+            android:id="@+id/btn_play_local_files"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/btn_play_many_urls"
+            android:text="播放多个本地PAG文件" />
 
     </RelativeLayout>
 
